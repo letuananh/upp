@@ -1,21 +1,24 @@
 #!/usr/bin/sh
 
 # Install C-dev tools
-apt-get install -y llvm gcc gcc-c++ cmake geany wget tkinter gtk2-devel qt-devel dconf-editor boost git emacs  httpd httpd-devel screen
+apt install -y build-essential
+apt install -y geany dconf-editor gcc wget libboost-all-dev screen
 
 # Install subversion software
-apt-get install -y svn rapidsvn meld
+apt install -y git
+apt install -y svn meld
+
+# Install Emacs 26
+add-apt-repository -y ppa:kelleyk/emacs
+apt-get update
+apt install -y emacs26
 
 # Install SQLite database management tool
-apt-get install -y sqliteman
+apt install -y sqlitebrowser
 
 # Install python packages
-apt-get install -y python-tools python-pip python-lxml python3-lxml
+apt install -y python-pip python3-pip python-lxml python3-lxml python3-venv
 
 # Install Chromium
-# apt-get install -y wget
-# cd /etc/yum.repos.d
-# wget http://repos.fedorapeople.org/repos/spot/chromium-stable/fedora-chromium-stable.repo
-# yum install -y --nogpgcheck chromium
-
+apt install -y chromium-browser
 

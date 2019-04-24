@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/bash
 # UBUNTU_VERSION=15.04
 
 # Setup repository?

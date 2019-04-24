@@ -1,6 +1,9 @@
 #!/usr/bin/sh
 
-apt-get install -y goldendict p7zip unrar filezilla anki comix gnugo
+apt install -y goldendict p7zip unrar filezilla anki gnugo
 
 # Partition editing tool
-apt-get install -y gparted 
+apt install -y gparted
+
+# random stuff
+apt install -y cowsay fortune
